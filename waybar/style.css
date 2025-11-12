@@ -1,0 +1,66 @@
+* {
+  font-family: "Iosevka Nerd Font";
+  font-weight: bolder;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+window {
+  background: rgba(0, 0, 0, 0.9999);   
+  border-radius: 0 0 20px 20px;
+}
+
+#wireplumber,
+#battery,
+#network,
+#bluetooth,
+#temperature,
+#tray,
+#custom-platform-profile,
+#idle_inhibitor,
+#language {
+  margin: 20px 0 20px ;
+  padding: 0   5px 0  5px;
+  background: transparent;
+}
+
+#clock {
+  padding: 0 20px 0 5px;
+}
+
+
+#workspaces button {
+  background: transparent;
+  box-shadow: none;
+  border-style: none;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Subtle dividers */
+#wireplumber,
+#battery,
+#network,
+#bluetooth,
+#temperature,
+#language,
+#idle_inhibitor,
+#custom-platform-profile {
+  border-left: 0px solid #333;
+  background: transparent;
+}
+
+/* Battery states */
+#battery.charging {
+  color: #41ff5a;
+}
+#battery.warning {
+  color: #ff8e0c;
+}
+#battery.critical {
+  color: #db0000;
+  font-weight: 700;
+}

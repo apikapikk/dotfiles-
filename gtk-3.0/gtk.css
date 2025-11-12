@@ -1,0 +1,39 @@
+.thunar window,
+.thunar .view {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.thunar .view row {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.thunar .view row:selected {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.thunar toolbar,
+.thunar toolbar * {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.thunar paned {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.thunar menubar {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.thunar grid {
+    outline-width: 0;
+}
+
+.thunar separator {
+    border-style: none;
+}

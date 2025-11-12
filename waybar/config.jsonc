@@ -1,0 +1,74 @@
+{
+    "id": "topbar",
+    "gtk-layer-shell": true,
+    "exclusive": false,
+    "pass-through": false,
+    "layer": "top",
+    "position": "top",
+    "height": 60,
+    "width" : 700,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "temperature",
+        "wireplumber",
+        "battery",
+        "hyprland/language",
+        "clock"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "<span size='larger'>{icon}</span>",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "\uef51",
+            "default": "\udb85\udd10"
+        },
+        "icon-size": 10,
+        "sort-by-number": true,
+        "all-outputs": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y %H:%M}"
+    },
+
+    "temperature": {
+        "format": "\uf4bc  {temperatureC}°"
+    },
+
+    "wireplumber": {
+        "format": "\udb81\udd7e  {volume}%",
+        "max-volume": 100,
+        "scroll-step": 5
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "interval": 60,
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+    },
+
+    "bluetooth": {
+        "format": "\udb80\udcaf",
+        "format-disabled": "\udb80\udcb2",
+        "format-connected": "\udb80\udcb1",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "hyprland/language": {
+        "format": "{short}"
+    }
+}
