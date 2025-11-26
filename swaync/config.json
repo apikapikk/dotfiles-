@@ -1,0 +1,44 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "cssPriority": "user",
+  "notification-icon-size": 42,
+  "notification-body-image-height": 110,
+  "notification-body-image-width": 200,
+  "notification-window-width": 360,
+  "show-dnd-notifications": true,
+  "widgets": [
+    "title",
+    "dnd",
+    "inhibitors",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "inhibitors": {
+      "show": true,
+      "text": "Inhibitors"
+    },
+    "notifications": {
+      "max-count": 20,
+      "max-visible": 7
+    },
+    "pulseaudio": {
+    "format": "{volume}%",
+    "on-scroll-up": "pamixer -i 5 && notify-send 'Volume' \"$(pamixer --get-volume)%\"",
+    "on-scroll-down": "pamixer -d 5 && notify-send 'Volume' \"$(pamixer --get-volume)%\""
+    },
+    "backlight": {
+    "device": "intel_backlight",
+    "on-scroll-up": "brightnessctl set +5% && notify-send 'Brightness' \"$(brightnessctl get)%\"",
+    "on-scroll-down": "brightnessctl set 5%- && notify-send 'Brightness' \"$(brightnessctl get)%\""
+    }
+  }
+}

@@ -1,0 +1,42 @@
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 14px;
+    font-weight: 600;
+    color: #eaeaea;
+}
+
+/* Panel utama */
+window {
+    background: rgba(25, 25, 25, 0.85);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* Judul */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Notifikasi */
+notification {
+    background: rgba(40, 40, 40, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.notification-icon {
+    margin-right: 10px;
+}
+
+.notification-actions button {
+    background: rgb(70, 70, 70);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.notification-actions button:hover {
+    background: rgb(100, 100, 100);
+}

@@ -1,33 +1,18 @@
 * {
-  font-family: "SpaceMonoNerdFont-Regular";
-  font-weight: 300;
+  font-family: "IosevkaNerdFont";
+  font-weight: 700;
   font-size: 18px;
   color: #f0f0f0;
 }
 
 window {
-  background: rgba(0, 0, 0, 0.9999);   
-  border-radius: 0 0 5px 5px;
-}
-
-#wireplumber,
-#battery,
-#network,
-#bluetooth,
-#temperature,
-#tray,
-#custom-platform-profile,
-#idle_inhibitor,
-#language {
-  margin: 0px 0 2px ;
-  padding: 0   5px 0  5px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.993);   
+  border-radius: 5px;
 }
 
 #clock {
   padding: 0 20px 0 5px;
 }
-
 
 #workspaces button {
   background: transparent;
@@ -39,6 +24,33 @@ window {
   background: transparent;
   box-shadow: none;
 }
+#pulseaudio-slider slider,
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+#pulseaudio-slider trough,
+#backlight-slider trough {
+    min-height: 5px;
+    min-width: 80px;
+    background: rgb(114, 114, 117);
+    border: none;
+}
+
+#pulseaudio-slider highlight,
+#backlight-slider highlight {
+    min-width: 10px;
+    background: rgb(255, 255, 255);
+    border: 1px;
+    border-style: solid;
+    border-color: #bbc9f8;
+}
 
 /* Subtle dividers */
 #wireplumber,
@@ -49,16 +61,16 @@ window {
 #language,
 #idle_inhibitor,
 #custom-platform-profile {
-  border-left: 0px solid #333;
-  background: transparent;
+  padding:0px 0px;
+  margin: 12px 5px;
 }
 
 /* Battery states */
 #battery.charging {
-  color: #41ff5a;
+  color: #00ff4c;
 }
 #battery.warning {
-  color: #ff8e0c;
+  color: #ff590c;
 }
 #battery.critical {
   color: #db0000;
